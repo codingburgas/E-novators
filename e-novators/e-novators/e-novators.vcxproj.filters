@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="manager.h">
+    <ClInclude Include="services\precompiler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
