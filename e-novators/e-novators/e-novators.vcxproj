@@ -134,9 +134,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="services\displayFunctionsCMD.cpp" />
+    <ClCompile Include="services\userDataManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="services\displayFunctionsCMD.h" />
     <ClInclude Include="services\precompiler.h" />
+    <ClInclude Include="services\userDataManagement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="database\materials\admin-ban-list.txt" />
+    <Text Include="database\materials\book-library.txt" />
+    <Text Include="database\materials\teacher-assignments.txt" />
+    <Text Include="database\users-students.txt" />
+    <Text Include="database\users-teachers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

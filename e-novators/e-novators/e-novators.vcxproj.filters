@@ -13,9 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\materials">
+      <UniqueIdentifier>{e4de6cb9-4d8d-444c-9e47-8655a8c21593}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="services\displayFunctionsCMD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="services\userDataManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,5 +32,28 @@
     <ClInclude Include="services\precompiler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="services\displayFunctionsCMD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="services\userDataManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="database\users-students.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="database\users-teachers.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="database\materials\admin-ban-list.txt">
+      <Filter>Resource Files\materials</Filter>
+    </Text>
+    <Text Include="database\materials\book-library.txt">
+      <Filter>Resource Files\materials</Filter>
+    </Text>
+    <Text Include="database\materials\teacher-assignments.txt">
+      <Filter>Resource Files\materials</Filter>
+    </Text>
   </ItemGroup>
 </Project>
