@@ -16,27 +16,45 @@
     <Filter Include="Resource Files\materials">
       <UniqueIdentifier>{e4de6cb9-4d8d-444c-9e47-8655a8c21593}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\cmdRelated">
+      <UniqueIdentifier>{44128efb-14c3-45dc-ba99-15a75d61d095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cmdRelated">
+      <UniqueIdentifier>{b8908d8d-e712-4d89-b446-09dd89b48d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\schoolRelated">
+      <UniqueIdentifier>{fc039dd0-812d-4542-a724-733295ec51ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\schoolRelated">
+      <UniqueIdentifier>{2b080286-e094-4846-ab1b-12383db0ab73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="services\displayFunctionsCMD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="services\userDataManagement.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="services\displayFunctionsCMD.cpp">
+      <Filter>Source Files\cmdRelated</Filter>
+    </ClCompile>
+    <ClCompile Include="services\schoolUI.cpp">
+      <Filter>Source Files\schoolRelated</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="services\precompiler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="services\displayFunctionsCMD.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="services\userDataManagement.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="services\displayFunctionsCMD.h">
+      <Filter>Header Files\cmdRelated</Filter>
+    </ClInclude>
+    <ClInclude Include="services\schoolUI.h">
+      <Filter>Header Files\schoolRelated</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,15 @@
 #include "precompiler.h"
 
+void waitForKey()
+{
+	// Check if the "Enter" key is pressed
+	int userInput = 0;
+	while (userInput != 13)
+	{
+		userInput = _getch();
+	}
+}
+
 bool accountLogOrReg()
 {
 	displayEntryPage();

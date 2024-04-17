@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="services\displayFunctionsCMD.cpp" />
+    <ClCompile Include="services\schoolUI.cpp" />
     <ClCompile Include="services\userDataManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="services\displayFunctionsCMD.h" />
     <ClInclude Include="services\precompiler.h" />
+    <ClInclude Include="services\schoolUI.h" />
     <ClInclude Include="services\userDataManagement.h" />
   </ItemGroup>
   <ItemGroup>
