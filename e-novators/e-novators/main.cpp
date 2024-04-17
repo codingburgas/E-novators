@@ -36,4 +36,7 @@ int main()
 	delete(password);
 	teacherDBREAD.close();
 	studentsDBREAD.close();
+
+
+	mainWindow();
 }

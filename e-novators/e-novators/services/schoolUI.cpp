@@ -1,6 +1,10 @@
 #include "precompiler.h"
+#include "def.h"
+#include "buttons.h"
 
 // --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
+
+static Button button;
 
 void mainWindow()			// --Same as teacher window--
 {
@@ -13,7 +17,8 @@ void mainWindow()			// --Same as teacher window--
 	{
 		BeginDrawing();
 
-		// Make "1st Window" here
+		Button::GetInstance()->drawButton(button.menuButtons[0]);		// Draws menu buttons
+		DrawText("Start", screenWidth / 2 - MeasureText("Start", 30) / 2, 488, 30, menuTextColor);
 
 		EndDrawing();
 	}
