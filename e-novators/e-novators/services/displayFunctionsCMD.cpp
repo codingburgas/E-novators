@@ -117,7 +117,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				waitForKey();
 
 				// Enter school
-				void mainWindow();
+				mainWindow();
 
 				break;
 			}
@@ -299,8 +299,6 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 					std::cout << "Account created. Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 					waitForKey();
 
-					// Enter school
-					void mainWindow();
 
 					break;
 				}
@@ -357,7 +355,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				waitForKey();
 
 				// Enter school
-				void mainWindow();
+				mainWindow();
 
 				break;
 			}
@@ -518,8 +516,6 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << "Account created. Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 					waitForKey();
 
-					// Enter school
-					void mainWindow();
 
 					break;
 				}

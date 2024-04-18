@@ -37,6 +37,4 @@ int main()
 	teacherDBREAD.close();
 	studentsDBREAD.close();
 
-
-	mainWindow();
 }
