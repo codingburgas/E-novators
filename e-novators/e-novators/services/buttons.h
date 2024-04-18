@@ -1,6 +1,6 @@
 #pragma once
 
-#include "raylib.h"
+#include "precompiler.h"
 #include "def.h"
 
 class Button
@@ -21,8 +21,9 @@ public:
 	// Check if the button is clicked
 	bool isClicked(Rectangle rect);
 
-	Rectangle menuButtons[3] = {
+	Rectangle menuButtons[2] = {
 		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
+		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 1.5 - (screenHeight / 2) / 4, menuButtonLength, menuButtonHeight}
 
 	};	// Sets button size and position
 

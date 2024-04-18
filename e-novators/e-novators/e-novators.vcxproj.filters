@@ -45,6 +45,9 @@
     <ClCompile Include="services\buttons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="services\precompiler.h">
@@ -59,10 +62,13 @@
     <ClInclude Include="services\schoolUI.h">
       <Filter>Header Files\schoolRelated</Filter>
     </ClInclude>
-    <ClInclude Include="buttons.h">
+    <ClInclude Include="def.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="def.h">
+    <ClInclude Include="sceneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="services\buttons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

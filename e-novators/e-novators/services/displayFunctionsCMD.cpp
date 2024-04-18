@@ -531,5 +531,5 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 void entryViolation()
 {
 	system("cls");
-	std::cout << "Sorry bruv, out of attempts <3";
+	std::cout << "Sorry, out of attempts!";
 }

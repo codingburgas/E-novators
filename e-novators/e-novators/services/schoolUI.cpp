@@ -17,7 +17,7 @@ void mainWindow()			// --Same as teacher window--
 	{
 		BeginDrawing();
 
-		Button::GetInstance()->drawButton(button.menuButtons[0]);		// Draws menu buttons
+		Button::GetInstance()->drawButton(button.menuButtons[0]);	
 		DrawText("Start", screenWidth / 2 - MeasureText("Start", 30) / 2, 488, 30, menuTextColor);
 
 		EndDrawing();
@@ -34,7 +34,8 @@ void profileWindow()		// --Same as teacher window--
 	{
 		BeginDrawing();
 
-		// Make "1st Window" here
+		Button::GetInstance()->drawButton(button.menuButtons[1]);
+		DrawText("Controls", screenWidth / 2 - MeasureText("Controls", 30) / 2, 620, 30, menuTextColor);
 
 		EndDrawing();
 	}
