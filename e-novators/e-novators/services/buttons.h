@@ -1,6 +1,4 @@
 #pragma once
-
-#include "precompiler.h"
 #include "def.h"
 
 class Button

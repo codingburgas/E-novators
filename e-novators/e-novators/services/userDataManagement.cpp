@@ -1,5 +1,7 @@
 #include "precompiler.h"
 
+static Button button;
+
 void waitForKey()
 {
 	// Check if the "Enter" key is pressed
@@ -44,4 +46,15 @@ bool userStudentOrTeacher(bool logOrReg)
 	}
 
 	return false;
+}
+
+void mainWindowFunctions()
+{
+	bool menu = false, start = true;
+	if (Button::GetInstance()->isClicked(button.menuButtons[0]))	// Buttons toggle menu items/close window
+	{
+
+
+
+	}
 }

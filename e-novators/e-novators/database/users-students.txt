@@ -1,10 +1,2 @@
-Georgi Ivanov 1234 10 V
-Ivan Dimov 1234 8 G
-Yuan Tomov 123 9 G
-Nasko Mangala jelqzo12 10 V
-Nasko Mangala jelqzo12 10 V
-Nasko Mangala jelqzo12 10 V
-Nasko Mangala jelqzo12 10 V
-Nasko Mangala jelqzo12 10 v
-Feri Ferhanov 123 9 A
-Feri Ferhanovv 123 9 B
+Tsvetan Zhekov 3478 9 G
+Tsvetan Zhekov 3478 9 G

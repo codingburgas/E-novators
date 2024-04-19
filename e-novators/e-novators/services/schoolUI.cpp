@@ -1,6 +1,4 @@
 #include "precompiler.h"
-#include "def.h"
-#include "buttons.h"
 
 // --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
 
@@ -10,15 +8,18 @@ void mainWindow()			// --Same as teacher window--
 {
 	system("70");
 
-	InitWindow(1980, 1080, "e-Class Edge");
+	InitWindow(1920, 1080, "e-Class Edge");
 	SetTargetFPS(60);
 
 	while (!WindowShouldClose())
 	{
 		BeginDrawing();
 
+		mainWindowFunctions();
+
 		Button::GetInstance()->drawButton(button.menuButtons[0]);	
 		DrawText("Start", screenWidth / 2 - MeasureText("Start", 30) / 2, 488, 30, menuTextColor);
+		
 
 		EndDrawing();
 	}
@@ -28,51 +29,17 @@ void mainWindow()			// --Same as teacher window--
 
 void profileWindow()		// --Same as teacher window--
 {
-	InitWindow(1980, 1080, "e-Class Edge");
-
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-
-		Button::GetInstance()->drawButton(button.menuButtons[1]);
-		DrawText("Controls", screenWidth / 2 - MeasureText("Controls", 30) / 2, 620, 30, menuTextColor);
-
-		EndDrawing();
-	}
-
-	CloseWindow();
+	
 }
 
 void schoolWindow()			// --Same as teacher window--
 {
-	InitWindow(1980, 1080, "e-Class Edge");
 
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-
-		// Make "1st Window" here
-
-		EndDrawing();
-	}
-
-	CloseWindow();
 }
 
 void assignmentWindowStudent()
 {
-	InitWindow(1980, 1080, "e-Class Edge");
 
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-
-		// Make "1st Window" here
-
-		EndDrawing();
-	}
-
-	CloseWindow();
 }
 
 
@@ -80,32 +47,10 @@ void assignmentWindowStudent()
 
 void assignmentWindowTeacher()
 {
-	InitWindow(1980, 1080, "e-Class Edge");
-
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-
-		// Make "1st Window" here
-
-		EndDrawing();
-	}
-
-	CloseWindow();
+	
 }
 
 void schoolLibrary()		// --Same as student window (exept with different options)--
 {
-	InitWindow(1980, 1080, "e-Class Edge");
-
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-
-		// Make "1st Window" here
-
-		EndDrawing();
-	}
-
-	CloseWindow();
+	
 }
