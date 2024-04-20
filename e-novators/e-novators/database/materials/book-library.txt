@@ -1,0 +1,61 @@
+bookName author genre yearOfPublish id
+To_Kill_a_Mockingbird	Harper Lee	Fiction	1960
+1984	George Orwell	Dystopian	1949
+The_Catcher_in_the_Rye	J.D. Salinger	Fiction	1951
+Pride_and_Prejudice	Jane Austen	Romance	1813
+Lord_of_the_Flies	William Golding	Fiction	1954
+The_Great_Gatsby	F. Scott Fitzgerald	Fiction	1925
+Harry_Potter_and_the_Sorcerer's_Stone	J.K. Rowling	Fantasy	1997
+The_Hobbit	J.R.R. Tolkien	Fantasy	1937
+Animal_Farm	George Orwell	Political_Satire	1945
+The_Diary_of_a_Young_Girl	Anne Frank	Memoir	1947
+The_Hunger_Games	Suzanne Collins	Dystopian	2008
+The_Giver	Lois Lowry	Dystopian	1993
+Brave_New_World	Aldous Huxley	Dystopian	1932
+Fahrenheit_451	Ray Bradbury	Dystopian	1953
+The_Alchemist	Paulo Coelho	Fiction	1988
+The_Outsiders	S.E. Hinton	Fiction	1967
+The_Little_Prince	Antoine de Saint-Exupéry	Children's_Fiction	1943
+The_Secret_Garden	Frances Hodgson Burnett	Children's_Fiction	1911
+Charlotte's_Web	E.B. White	Children's_Fiction	1952
+Matilda	Roald Dahl	Children's_Fiction	1988
+Bridge_to_Terabithia	Katherine Paterson	Children's_Fiction	1977
+The_Chronicles_of_Narnia:_The_Lion,_the_Witch,_and_the_Wardrobe	C.S. Lewis	Fantasy	1950
+The_Harry_Potter_series	J.K. Rowling	Fantasy	1997-2007
+The_Lord_of_the_Rings	J.R.R. Tolkien	Fantasy	1954-1955
+Anne_of_Green_Gables	L.M. Montgomery	Fiction	1908
+Wuthering_Heights	Emily Brontë	Fiction	1847
+Jane_Eyre	Charlotte Brontë	Fiction	1847
+Little_Women	Louisa May Alcott	Fiction	1868-1869
+The_Adventures_of_Huckleberry_Finn	Mark Twain	Fiction	1884
+The_Adventures_of_Tom_Sawyer	Mark Twain	Fiction	1876
+The_Bell_Jar	Sylvia Plath	Fiction	1963
+The_Picture_of_Dorian_Gray	Oscar Wilde	Fiction	1890
+The_Kite_Runner	Khaled Hosseini	Fiction	2003
+A_Thousand_Splendid_Suns	Khaled Hosseini	Fiction	2007
+The_Road	Cormac McCarthy	Fiction	2006
+To_Kill_a_Mockingbird	Harper Lee	Fiction	1960
+The_Color_Purple	Alice Walker	Fiction	1982
+The_Book_Thief	Markus Zusak	Historical_Fiction	2005
+The_Diary_of_Anne_Frank	Anne Frank	Memoir	1947
+Night	Elie Wiesel	Memoir	1958
+Educated	Tara Westover	Memoir	2018
+I_Am_Malala	Malala Yousafzai	Memoir	2013
+The_Autobiography_of_Malcolm_X	Malcolm X, Alex Haley	Memoir	1965
+The_Hitchhiker's_Guide_to_the_Galaxy	Douglas Adams	Science_Fiction	1979
+Dune	Frank Herbert	Science_Fiction	1965
+Neuromancer	William Gibson	Science_Fiction	1984
+Jurassic_Park	Michael Crichton	Science_Fiction	1990
+Ender's_Game	Orson Scott Card	Science_Fiction	1985
+Foundation	Isaac Asimov	Science_Fiction	1951
+The_Martian	Andy Weir	Science_Fiction	2011
+Ready_Player_One	Ernest Cline	Science_Fiction	2011
+The_Handmaid's_Tale	Margaret Atwood	Science_Fiction	1985
+The_Road_Less_Traveled	M. Scott Peck	Self-Help	1978
+How_to_Win_Friends_and_Influence_People	Dale Carnegie	Self-Help	1936
+Man's_Search_for_Meaning	Viktor E. Frankl	Self-Help	1946
+The_Power_of_Now	Eckhart Tolle	Self-Help	1997
+Quiet:_The_Power_of_Introverts_in_a_World_That_Can't_Stop_Talking	Susan Cain	Psychology/Self-Help	2012
+The_7_Habits_of_Highly_Effective_People	Stephen R. Covey	Self-Help	1989
+The_Subtle_Art_of_Not_Giving_a_F*ck	Mark Manson	Self-Help	2016
+The_Catcher_in_the_Rye	J.D. Salinger	Fiction	1951

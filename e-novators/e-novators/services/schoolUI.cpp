@@ -9,6 +9,7 @@ void mainWindow()			// --Same as teacher window--
 	system("70");
 
 	InitWindow(1920, 1080, "e-Class Edge");
+	ToggleFullscreen();
 	SetTargetFPS(60);
 
 	while (!WindowShouldClose())
@@ -16,9 +17,18 @@ void mainWindow()			// --Same as teacher window--
 		BeginDrawing();
 
 		mainWindowFunctions();
+		ClearBackground(RAYWHITE); //background
+		DrawRectangle(0, 0, 1920, 10, DARKGRAY);         //frame
+		DrawRectangle(1920, 1080, -1920, -10, DARKGRAY); //frame
+		DrawRectangle(0, 0, 10, 1080, DARKGRAY);	//frame
+		DrawRectangle(1920, 1080, -10, -1080, DARKGRAY); //frame
+
+		DrawRectangle(0, 100, 1920, 5, DARKGRAY);
+		DrawCircle(60, 55, 40, BLACK);
+
 
 		Button::GetInstance()->drawButton(button.menuButtons[0]);	
-		DrawText("Start", screenWidth / 2 - MeasureText("Start", 30) / 2, 488, 30, menuTextColor);
+		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
 		
 
 		EndDrawing();
