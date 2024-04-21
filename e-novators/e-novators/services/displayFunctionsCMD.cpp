@@ -68,14 +68,15 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 	{
 		// Login form - students
 
+		std::ifstream studentsDBPFP("database/usersPFP-students.txt");
+
 		char classLetter;
-		bool accountFound = false;
+		bool accountFound = false, flag = false;
 		int numberOfAttemps = 0, classNumber = 0;
 
 		while (!accountFound)
 		{
 			system("cls");
-			bool flag = false;
 
 			// Drawing TOP page design
 			drawTopDesign();
@@ -96,11 +97,14 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 			// Clear the buffer and place the reading point at the beginning
 			studentsDBREAD.clear();
 			studentsDBREAD.seekg(0, std::ios::beg);
-			std::string root = "";
+			studentsDBPFP.clear();
+			studentsDBPFP.seekg(0, std::ios::beg);
+			std::string rootStudentsDB = "", rootStudentsDBPFP = "";
 			while (studentsDBREAD)
 			{
-				getline(studentsDBREAD, root);
-				if (root == (username + " " + password + " " + std::to_string(classNumber) + " " + classLetter))
+				getline(studentsDBREAD, rootStudentsDB);
+				getline(studentsDBPFP, rootStudentsDBPFP);
+				if (rootStudentsDB == (username + " " + password + " " + std::to_string(classNumber) + " " + classLetter + " " + rootStudentsDBPFP))
 				{
 					flag = true;
 					break;
@@ -115,9 +119,6 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				system("cls");
 				std::cout << "Successfully logged in! Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 				waitForKey();
-
-				// Enter school
-				sceneMagager();
 
 				break;
 			}
@@ -134,6 +135,13 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				}
 			}
 		}
+
+		studentsDBPFP.close();
+		if (flag)
+		{
+			// Enter school
+			sceneMagager(0);
+		}
 	}
 	else
 	{
@@ -141,7 +149,10 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 
 		// Loading database
 		std::ofstream studentsDBWRITE("./database/users-students.txt", std::ios::app);		// Open database in append mode
-		
+		std::ofstream studentsDBPFP("database/usersPFP-students.txt", std::ios::app);		// Open database in append mode
+
+		int keepUserPFP = 0;
+		bool flag = true;
 		if (!studentsDBWRITE.is_open())
 		{
 			system("cls");
@@ -152,7 +163,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 			std::string* checkForAccountDuplicate = new std::string();
 			char studentClassLetter;
 			int checkForSpace = 0, * studentClassNumber = new int();
-			bool flag = true, checkBufferMemory = false;
+			bool checkBufferMemory = false;
 
 			while (flag)
 			{
@@ -298,8 +309,11 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 					displayStudentRegLog(studentsDBREAD, username, password, entryType);
 				}
 
+				keepUserPFP = generateUserPFP(true);
+
 				// Write new data in database
-				studentsDBWRITE << username << " " << password << " " << *studentClassNumber << " " << studentClassLetter << '\n';
+				studentsDBWRITE << username << " " << password << " " << *studentClassNumber << " " << studentClassLetter << " " << keepUserPFP << '\n';
+				studentsDBPFP << keepUserPFP << '\n';
 
 				if (flag)
 				{
@@ -311,8 +325,13 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				}
 			}
 
-			// Enter school after completing registration
-			sceneMagager();
+			studentsDBWRITE.close();
+			studentsDBPFP.close();
+			if (flag)
+			{
+				// Enter school after completing registration
+				sceneMagager(keepUserPFP);
+			}
 		}
 	}
 }
@@ -323,14 +342,15 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 	{
 		// Login form - teachers
 
+		std::ifstream teachersDBPFP("database/usersPFP-teachers.txt");
+
 		char classLetter;
-		bool accountFound = false;
+		bool accountFound = false, flag = false;
 		int numberOfAttemps = 0, classNumber = 0;
 
 		while (!accountFound)
 		{
 			system("cls");
-			bool flag = false;
 
 			// Drawing TOP page design
 			drawTopDesign();
@@ -345,11 +365,12 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 			// Clear the buffer and place the reading point at the beginning
 			teachersDBREAD.clear();
 			teachersDBREAD.seekg(0, std::ios::beg);
-			std::string root = "";
+			std::string rootTeachersDB = "", rootTeachersDBPFP = "";
 			while (teachersDBREAD)
 			{
-				getline(teachersDBREAD, root);
-				if (root == (username + " " + password))
+				getline(teachersDBREAD, rootTeachersDB);
+				getline(teachersDBREAD, rootTeachersDBPFP);
+				if (rootTeachersDB == (username + " " + password + " " + rootTeachersDBPFP))
 				{
 					flag = true;
 					break;
@@ -381,8 +402,12 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 			}
 		}
 
-		// Enter school after successful login
-		sceneMagager();
+		teachersDBPFP.close();
+		if (flag)
+		{
+			// Enter school after successful login
+			sceneMagager(0);
+		}
 	}
 	else
 	{
@@ -390,6 +415,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 
 		// Loading database
 		std::ofstream teachersDBWRITE("./database/users-teachers.txt", std::ios::app);		// Open database in append mode
+		std::ofstream teachersDBPFP("./database/usersPFP-teachers.txt", std::ios::app);		// Open database in append mode
 
 		if (!teachersDBWRITE.is_open())
 		{
@@ -399,7 +425,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 		else
 		{
 			std::string* checkForAccountDuplicate = new std::string();
-			int checkForSpace = 0;
+			int checkForSpace = 0, keepUserPFP = 0;
 			bool flag = true;
 
 			while (flag)
@@ -520,8 +546,11 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 				}
 
+				keepUserPFP = generateUserPFP(false);
+
 				// Write new data in database
-				teachersDBWRITE << username << " " << password << '\n';
+				teachersDBWRITE << username << " " << password << " " << keepUserPFP << '\n';
+				teachersDBPFP << keepUserPFP << '\n';
 
 				if (flag)
 				{
@@ -529,16 +558,19 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << "Account created. Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 					waitForKey();
 
-
 					break;
 				}
 			}
 
 			delete(checkForAccountDuplicate);
+			teachersDBPFP.close();
 			teachersDBWRITE.close();
 
-			// Enter school after completing registration
-			sceneMagager();
+			if (flag)
+			{
+				// Enter school after completing registration
+				sceneMagager(keepUserPFP);
+			}
 		}
 	}
 }

@@ -146,6 +146,7 @@
     <ClCompile Include="services\userDataManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="closer.h" />
     <ClInclude Include="services\buttons.h" />
     <ClInclude Include="services\def.h" />
     <ClInclude Include="services\displayFunctionsCMD.h" />
@@ -160,6 +161,8 @@
     <Text Include="database\materials\teacher-assignments.txt" />
     <Text Include="database\users-students.txt" />
     <Text Include="database\users-teachers.txt" />
+    <Text Include="database\usersPFP-students.txt" />
+    <Text Include="database\usersPFP-teachers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

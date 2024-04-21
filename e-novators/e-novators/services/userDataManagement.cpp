@@ -82,3 +82,29 @@ int generateUserPFP(bool studentPFP)
 		return range(rd);
 	}
 }
+
+int generateUserStatistics()
+{
+	/*std::random_device avgStudentGrade;
+	std::uniform_int_distribution<float> rangeGrade(2, 6);
+
+	std::random_device classMembers;
+	std::uniform_int_distribution<int> rangeClass(1, 24);
+
+	std::random_device graduation;
+	std::uniform_int_distribution<int> rangeGraduation(1, 503);*/
+
+	return 1;
+}
+
+bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
+{
+	if ((x >= imageX && x <= imageX + image.width) && (y >= imageY && y <= imageY + image.height))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

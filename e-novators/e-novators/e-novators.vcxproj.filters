@@ -68,6 +68,9 @@
     <ClInclude Include="services\render.h">
       <Filter>Header Files\schoolRelated</Filter>
     </ClInclude>
+    <ClInclude Include="closer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="database\users-students.txt">
@@ -84,6 +87,12 @@
     </Text>
     <Text Include="database\materials\teacher-assignments.txt">
       <Filter>Resource Files\materials</Filter>
+    </Text>
+    <Text Include="database\usersPFP-students.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="database\usersPFP-teachers.txt">
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
 </Project>

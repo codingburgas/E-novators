@@ -1,8 +1,7 @@
 #pragma once
 
-void sceneMagager();
+void sceneMagager(int userPFP);
 void mainWindow();
-void profileWindow();
 void schoolWindow();
 void assignmentWindowStudent();
 void assignmentWindowTeacher();

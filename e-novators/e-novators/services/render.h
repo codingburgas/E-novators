@@ -3,3 +3,4 @@
 int windowsTransition = 1;
 
 Texture2D background;
+Texture2D exitButton;
