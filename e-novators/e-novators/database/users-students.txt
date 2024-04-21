@@ -1,4 +1,2 @@
-Tsvetan Zhekov 3478 9 G
-Tsvetan Zhekov 3478 9 G
+Tsvetan Zhekov 1234 9 G
 Georgi Ivanov 1234 10 V
-G G G 10 G

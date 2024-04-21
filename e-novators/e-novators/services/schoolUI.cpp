@@ -3,38 +3,43 @@
 // --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
 
 static Button button;
+extern Texture2D background;
 
-void mainWindow()			// --Same as teacher window--
+void sceneMagager()
 {
-	system("70");
+	system("cls");
+	system("color f0");
 
 	InitWindow(1920, 1080, "e-Class Edge");
 	ToggleFullscreen();
 	SetTargetFPS(60);
 
+	textureRenderer();
+
+	int windowDeterminer = 1;
 	while (!WindowShouldClose())
 	{
 		BeginDrawing();
 
 		mainWindowFunctions();
-		ClearBackground(RAYWHITE); //background
-		DrawRectangle(0, 0, 1920, 10, DARKGRAY);         //frame
-		DrawRectangle(1920, 1080, -1920, -10, DARKGRAY); //frame
-		DrawRectangle(0, 0, 10, 1080, DARKGRAY);	//frame
-		DrawRectangle(1920, 1080, -10, -1080, DARKGRAY); //frame
-
-		DrawRectangle(0, 100, 1920, 5, DARKGRAY);
-		DrawCircle(60, 55, 40, BLACK);
-
-
-		Button::GetInstance()->drawButton(button.menuButtons[0]);	
-		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
+		ClearBackground(RAYWHITE);
 		
+
+
+		Button::GetInstance()->drawButton(button.menuButtons[0]);
+		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
+
 
 		EndDrawing();
 	}
 
+	UnloadTexture(background);
 	CloseWindow();
+}
+
+void mainWindow()			// --Same as teacher window--
+{
+	DrawTexture(background, 0, 0, RAYWHITE);
 }
 
 void profileWindow()		// --Same as teacher window--

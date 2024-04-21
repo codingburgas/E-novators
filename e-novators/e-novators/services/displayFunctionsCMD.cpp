@@ -91,7 +91,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');		// Skip all characters in the stream's buffer until it reaches '\n'
 			std::cout << std::setw(100) << "|Enter student class letter: ";
 			std::cin >> classLetter;
-			std::cin.ignore(2, '\n');												// Ignore 1 character and terminate when ‘\n’ is found
+			std::cin.ignore(2, '\n');												// Ignore 2 character and terminate when ‘\n’ is found
 
 			// Clear the buffer and place the reading point at the beginning
 			studentsDBREAD.clear();
@@ -117,7 +117,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				waitForKey();
 
 				// Enter school
-				mainWindow();
+				sceneMagager();
 
 				break;
 			}
@@ -141,7 +141,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 
 		// Loading database
 		std::ofstream studentsDBWRITE("./database/users-students.txt", std::ios::app);		// Open database in append mode
-
+		
 		if (!studentsDBWRITE.is_open())
 		{
 			system("cls");
@@ -152,7 +152,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 			std::string* checkForAccountDuplicate = new std::string();
 			char studentClassLetter;
 			int checkForSpace = 0, * studentClassNumber = new int();
-			bool flag = true;
+			bool flag = true, checkBufferMemory = false;
 
 			while (flag)
 			{
@@ -164,12 +164,20 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				// Drawing options
 				std::cout << std::setw(92) << "|Enter student name: ";
 				std::getline(std::cin, username);
+				
+				if (checkBufferMemory)
+				{
+					std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');		// Skip all characters in the stream's buffer until it reaches '\n'
+				}
+				
 				std::cout << std::setw(96) << "|Enter student password: ";
 				std::getline(std::cin, password);
-				std::cout << std::setw(93) << "|Enter student class: ";		// Number and Letter
+				std::cout << std::setw(93) << "|Enter student class: ";						// Number and Letter
 				std::cin >> *studentClassNumber;
 				std::cin >> studentClassLetter;
-				std::cin.ignore(2, '\n');									// Ignore 1 character and terminate when ‘\n’ is found
+				std::cin.clear();															// Clears std::cin buffer
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');			// Skip all characters in the stream's buffer until it reaches '\n'
+				checkBufferMemory = true;
 
 				// Drawing BOTTOM page design
 				drawBottomDesign();
@@ -330,6 +338,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 			std::getline(std::cin, username);
 			std::cout << std::setw(96) << "|Enter teacher password: ";
 			std::getline(std::cin, password);
+			std::cin.clear();													// Clears std::cin buffer
 
 			// Clear the buffer and place the reading point at the beginning
 			teachersDBREAD.clear();
@@ -355,7 +364,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				waitForKey();
 
 				// Enter school
-				mainWindow();
+				sceneMagager();
 
 				break;
 			}
@@ -401,8 +410,10 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				// Drawing options
 				std::cout << std::setw(92) << "|Enter teacher name: ";
 				std::getline(std::cin, username);
+				std::cin.clear();													// Clears std::cin buffer
 				std::cout << std::setw(96) << "|Enter teacher password: ";
 				std::getline(std::cin, password);
+				std::cin.clear();													// Clears std::cin buffer
 
 				// Drawing BOTTOM page design
 				drawBottomDesign();
@@ -413,7 +424,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << '\n' << std::setw(101) << "Invalid username...";
 
 					waitForKey();
-					displayStudentRegLog(teachersDBREAD, username, password, entryType);
+					displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 				}
 
 				// Check if username already exists
@@ -427,7 +438,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 						std::cout << '\n' << std::setw(105) << "Username already exists...";
 
 						waitForKey();
-						displayStudentRegLog(teachersDBREAD, username, password, entryType);
+						displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 					}
 				}
 
@@ -439,7 +450,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 						std::cout << '\n' << std::setw(110) << "Use symbols only from the alphabet...";
 
 						waitForKey();
-						displayStudentRegLog(teachersDBREAD, username, password, entryType);
+						displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 					}
 				}
 
@@ -449,7 +460,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << '\n' << std::setw(111) << "First letter should be in uppercase...";
 
 					waitForKey();
-					displayStudentRegLog(teachersDBREAD, username, password, entryType);
+					displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 				}
 
 				for (size_t i = 0; i < username.length(); i++)
@@ -467,7 +478,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 									std::cout << '\n' << std::setw(112) << "Surname letter should be in uppercase...";
 
 									waitForKey();
-									displayStudentRegLog(teachersDBREAD, username, password, entryType);
+									displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 								}
 							}
 						}
@@ -483,7 +494,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 								std::cout << '\n' << std::setw(101) << "Invalid username...";
 
 								waitForKey();
-								displayStudentRegLog(teachersDBREAD, username, password, entryType);
+								displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 							}
 						}
 					}
@@ -495,7 +506,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << '\n' << std::setw(101) << "Invalid password...";
 
 					waitForKey();
-					displayStudentRegLog(teachersDBREAD, username, password, entryType);
+					displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 				}
 
 				// Check if surname is present
@@ -504,7 +515,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 					std::cout << '\n' << std::setw(101) << "Surname missing...";
 
 					waitForKey();
-					displayStudentRegLog(teachersDBREAD, username, password, entryType);
+					displayTeacherRegLog(teachersDBREAD, username, password, entryType);
 				}
 
 				// Write new data in database

@@ -1,4 +1,5 @@
 #include "precompiler.h"
+#include "render.h"
 
 static Button button;
 
@@ -57,4 +58,9 @@ void mainWindowFunctions()
 
 
 	}
+}
+
+void textureRenderer()
+{
+	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
 }

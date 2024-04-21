@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\displayFunctionsCMD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\userDataManagement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\displayFunctionsCMD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\precompiler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\precompiler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\schoolUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\schoolUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\userDataManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\displayFunctionsCMD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\schoolUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\schoolUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\precompiler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\precompiler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\userDataManagement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\database\\users-students.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\database\\users-students.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\def.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|solutionrelative:e-novators\\services\\def.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{647F7DEC-3D74-4ECC-9BA5-1DC87DCEA8C4}|e-novators\\e-novators.vcxproj|C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\database\\users-teachers.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -50,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\main.cpp",
               "RelativeDocumentMoniker": "e-novators\\main.cpp",
               "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\main.cpp",
               "RelativeToolTip": "e-novators\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAwAYAAACMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-14T19:30:06.5Z",
               "IsPinned": true,
@@ -84,28 +88,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "displayFunctionsCMD.cpp",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp",
+              "RelativeDocumentMoniker": "e-novators\\services\\displayFunctionsCMD.cpp",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp",
+              "RelativeToolTip": "e-novators\\services\\displayFunctionsCMD.cpp",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAACECAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-15T00:44:43.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "userDataManagement.cpp",
               "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.cpp",
               "RelativeDocumentMoniker": "e-novators\\services\\userDataManagement.cpp",
               "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.cpp",
               "RelativeToolTip": "e-novators\\services\\userDataManagement.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-15T00:46:18.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "displayFunctionsCMD.cpp",
-              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp",
-              "RelativeDocumentMoniker": "e-novators\\services\\displayFunctionsCMD.cpp",
-              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.cpp",
-              "RelativeToolTip": "e-novators\\services\\displayFunctionsCMD.cpp",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAQwHkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-15T00:44:43.173Z",
               "EditorCaption": ""
             },
             {
@@ -116,7 +120,7 @@
               "RelativeDocumentMoniker": "e-novators\\services\\schoolUI.cpp",
               "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\schoolUI.cpp",
               "RelativeToolTip": "e-novators\\services\\schoolUI.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAAACAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-17T00:51:59.158Z",
               "EditorCaption": ""
@@ -124,51 +128,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "userDataManagement.h",
-              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h",
-              "RelativeDocumentMoniker": "e-novators\\services\\userDataManagement.h",
-              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h",
-              "RelativeToolTip": "e-novators\\services\\userDataManagement.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-15T00:48:46.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "displayFunctionsCMD.h",
-              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.h",
-              "RelativeDocumentMoniker": "e-novators\\services\\displayFunctionsCMD.h",
-              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\displayFunctionsCMD.h",
-              "RelativeToolTip": "e-novators\\services\\displayFunctionsCMD.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAB3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-15T00:48:45.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "schoolUI.h",
               "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\schoolUI.h",
               "RelativeDocumentMoniker": "e-novators\\services\\schoolUI.h",
               "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\schoolUI.h",
               "RelativeToolTip": "e-novators\\services\\schoolUI.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-17T00:57:00.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "userDataManagement.h",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h",
+              "RelativeDocumentMoniker": "e-novators\\services\\userDataManagement.h",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\userDataManagement.h",
+              "RelativeToolTip": "e-novators\\services\\userDataManagement.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-15T00:48:46.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "render.h",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\render.h",
+              "RelativeDocumentMoniker": "e-novators\\services\\render.h",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\render.h",
+              "RelativeToolTip": "e-novators\\services\\render.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-20T19:38:46.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "precompiler.h",
               "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\precompiler.h",
               "RelativeDocumentMoniker": "e-novators\\services\\precompiler.h",
               "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\precompiler.h",
               "RelativeToolTip": "e-novators\\services\\precompiler.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-14T19:31:48.996Z",
               "EditorCaption": ""
@@ -176,6 +180,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "def.h",
+              "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\def.h",
+              "RelativeDocumentMoniker": "e-novators\\services\\def.h",
+              "ToolTip": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\services\\def.h",
+              "RelativeToolTip": "e-novators\\services\\def.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-20T15:25:24.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "users-teachers.txt",
               "DocumentMoniker": "C:\\Users\\Aleksandar\\Desktop\\E-novators\\e-novators\\e-novators\\database\\users-teachers.txt",
               "RelativeDocumentMoniker": "e-novators\\database\\users-teachers.txt",
