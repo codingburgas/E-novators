@@ -11,7 +11,7 @@
 #### Yuan Tomov - Developer
 #### Tsvetan Zhekov - Developer
 
-## <img src= "resources/light-bulb_icon.png" alt="light bulb">About the game
+## <img src= "resources/light-bulb_icon.png" alt="light bulb">About the app
 
 #### Our team made digital school where teachers can give homework, tasks to grade, see the students with highest/lowest grades and the average grades of a student.
 
@@ -50,4 +50,3 @@
 ##### <img src= "resources/C++_icon_light.png#gh-dark-mode-only" alt="C++ icon"><img src= "resources/C++_icon_dark.png#gh-light-mode-only" alt="C++ icon">
 #### Used tools for our documentation & presentation & communication:
 ##### <img src= "resources/word_logo_big.png" alt="word logo"> <img src= "resources/powerpoint_logo_big.png" alt="powerpoint logo"> <img src= "resources/microsoft_teams_logo.png" alt="microsoft teams logo">
-```
