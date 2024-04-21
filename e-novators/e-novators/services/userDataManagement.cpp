@@ -51,7 +51,7 @@ bool userStudentOrTeacher(bool logOrReg)
 
 void textureRenderer()
 {
-	exitButton = LoadTexture("../../sprites/windows-design/exitButton.png");
+	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
 	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
 }
 
@@ -81,5 +81,17 @@ int generateUserPFP(bool studentPFP)
 		std::random_device rd;
 		std::uniform_int_distribution<int> range(1, 2);
 		return range(rd);
+	}
+}
+
+bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
+{
+	if ((x >= imageX && x <= imageX + image.width) && (y >= imageY && y <= imageY + image.height))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }

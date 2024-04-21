@@ -20,7 +20,7 @@ public:
 	bool isClicked(Rectangle rect);
 
 	Rectangle menuButtons[5] = {
-		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
+		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 2 - menuButtonHeight / 2, menuButtonLength, menuButtonHeight},
 		{screenWidth / 3 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
 		{screenWidth / 4 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
 		{screenWidth / 5 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
