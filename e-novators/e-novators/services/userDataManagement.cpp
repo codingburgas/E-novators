@@ -51,6 +51,7 @@ bool userStudentOrTeacher(bool logOrReg)
 
 void textureRenderer()
 {
+	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
 	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
 }
 
