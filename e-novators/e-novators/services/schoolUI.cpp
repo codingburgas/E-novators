@@ -21,7 +21,7 @@ void sceneMagager()
 		
 
 	Button::GetInstance()->drawButton(button.menuButtons[0]);
-		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
+		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 100) / 2, 488, 30, menuTextColor);
 		mainWindowFunctions();
 		
 
@@ -40,7 +40,12 @@ void mainWindow()			// --Same as teacher window--
 
 void profileWindow()		// --Same as teacher window--
 {
-	
+	Button::GetInstance()->drawButton(button.menuButtons[0]);
+	DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
+	mainWindowFunctions();
+
+
+	EndDrawing();
 }
 
 void schoolWindow()			// --Same as teacher window--
