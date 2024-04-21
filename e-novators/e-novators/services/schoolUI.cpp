@@ -58,12 +58,18 @@ void mainWindow()			// --Same as teacher window--	ID: 1
 
 void profileWindow()		// --Same as teacher window--	ID: 2
 {
-	
+	Button::GetInstance()->drawButton(button.backButton);
+	DrawText("Back", (screenWidth / 12) - 10 - MeasureText("Back", 30) / 2, 90, 30, menuTextColor);
+
+	if (Button::GetInstance()->isClicked(button.backButton))	// Buttons toggle menu items/close window
+	{
+		windowsTransition = 1;
+	}
 }
 
 void schoolWindow()			// --Same as teacher window--	ID: 3
 {
-
+	
 }
 
 void assignmentWindowStudent()							//	ID: 4
