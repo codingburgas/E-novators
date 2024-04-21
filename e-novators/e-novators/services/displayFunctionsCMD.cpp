@@ -307,10 +307,12 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 					std::cout << "Account created. Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 					waitForKey();
 
-
 					break;
 				}
 			}
+
+			// Enter school after completing registration
+			sceneMagager();
 		}
 	}
 }
@@ -363,9 +365,6 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				std::cout << "Successfully logged in! Press \"Enter\" to proceed to main program... - <clear screen (cls), change colours of cmd and start raylib window>";
 				waitForKey();
 
-				// Enter school
-				sceneMagager();
-
 				break;
 			}
 			else
@@ -381,6 +380,9 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				}
 			}
 		}
+
+		// Enter school after successful login
+		sceneMagager();
 	}
 	else
 	{
@@ -534,13 +536,9 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 
 			delete(checkForAccountDuplicate);
 			teachersDBWRITE.close();
+
+			// Enter school after completing registration
+			sceneMagager();
 		}
 	}
-}
-
-// Considered as Entry Violation (EV) after 5 failed login attempts
-void entryViolation()
-{
-	system("cls");
-	std::cout << "Sorry, out of attempts!";
 }

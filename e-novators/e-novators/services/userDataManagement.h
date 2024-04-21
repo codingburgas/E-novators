@@ -3,5 +3,7 @@
 void waitForKey();
 bool accountLogOrReg();
 bool userStudentOrTeacher(bool userType);
-void mainWindowFunctions();
 void textureRenderer();
+void textureUnloader();
+void entryViolation();
+int generateUserPFP(bool studentPFP);

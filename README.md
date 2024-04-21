@@ -7,7 +7,7 @@
 #### Dimitar Georgiev - Scrum Trainer
 #### Nikolay Zhelev - QA
 #### Georgi Ivanov - Developer
-#### Aleksander Popov - Developer
+#### Aleksandar Popov - Developer
 #### Yuan Tomov - Developer
 #### Tsvetan Zhekov - Developer
 
@@ -31,7 +31,7 @@
 
 #### `https://github.com/codingburgas/E-novators`
 
-#### 2. Open the *premake .bat* file
+#### 2. Open the *solution .sln* file
 
 #### 3. Run the project
 
@@ -45,7 +45,7 @@
 #### Used code editor & collaborative service:
 ##### <img src= "resources/visual_studio_logo.png" alt="Visual Studio 2022 logo"> <img src= "resources/github_logo_light.png#gh-light-mode-only" alt="github logo"><img src= "resources/github_logo_dark.png#gh-dark-mode-only" alt="github logo"> <img src= "resources/git_logo.png" alt="Git logo">
 #### Used tools for our overall design:
-##### <img src= "resources/aseprite_icon.png" alt="Aseprite logo"> 
+##### <img src= "resources/aseprite_icon.png" alt="Aseprite logo"> <img src= "resources/krita_icon.jpg" alt="Krita logo"> <img src= "resources/photoshop_icon.jpg" alt="Photoshop logo"> <img src= "resources/illustrator_icon.jpg" alt="Illustrator logo"> <img src= "resources/figma_icon.jpg" alt="Figma logo">
 #### Used technologies for our project development:
 ##### <img src= "resources/C++_icon_light.png#gh-dark-mode-only" alt="C++ icon"><img src= "resources/C++_icon_dark.png#gh-light-mode-only" alt="C++ icon">
 #### Used tools for our documentation & presentation & communication:

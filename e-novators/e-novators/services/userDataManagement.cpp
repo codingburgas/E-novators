@@ -49,30 +49,36 @@ bool userStudentOrTeacher(bool logOrReg)
 	return false;
 }
 
-void mainWindowFunctions()
-{
-	
-	if (Button::GetInstance()->isClicked(button.menuButtons[0]))	// Buttons toggle menu items/close window
-	{
-
-		mainWindow();
-
-	}
-}
-
 void textureRenderer()
 {
 	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
 }
 
-void ManageWindow() // Sets basic window parameters
+void textureUnloader()
 {
+	UnloadTexture(background);
+}
 
+// Considered as Entry Violation (EV) after 5 failed login attempts
+void entryViolation()
+{
 	system("cls");
-	system("color f0");
+	std::cout << "Sorry, out of attempts!";
+}
 
-	InitWindow(1920, 1080, "e-Class Edge");
-	ToggleFullscreen();
-	SetTargetFPS(60);
-	
+// Chose profile picture for student/teacher
+int generateUserPFP(bool studentPFP)
+{
+	if (studentPFP)
+	{
+		std::random_device rd;
+		std::uniform_int_distribution<int> range(1, 7);
+		return range(rd);
+	}
+	else
+	{
+		std::random_device rd;
+		std::uniform_int_distribution<int> range(1, 2);
+		return range(rd);
+	}
 }
