@@ -7,12 +7,7 @@ extern Texture2D background;
 
 void sceneMagager()
 {
-	system("cls");
-	system("color f0");
-
-	InitWindow(1920, 1080, "e-Class Edge");
-	ToggleFullscreen();
-	SetTargetFPS(60);
+	ManageWindow();
 
 	textureRenderer();
 
@@ -21,25 +16,26 @@ void sceneMagager()
 	{
 		BeginDrawing();
 
-		mainWindowFunctions();
-		ClearBackground(RAYWHITE);
+		DrawTexture(background, 0, 0, RAYWHITE);
+		
 		
 
-
-		Button::GetInstance()->drawButton(button.menuButtons[0]);
+	Button::GetInstance()->drawButton(button.menuButtons[0]);
 		DrawText("10V class", screenWidth / 2 - MeasureText("10V class", 30) / 2, 488, 30, menuTextColor);
-
+		mainWindowFunctions();
+		
 
 		EndDrawing();
 	}
 
-	UnloadTexture(background);
+	
 	CloseWindow();
 }
 
 void mainWindow()			// --Same as teacher window--
 {
-	DrawTexture(background, 0, 0, RAYWHITE);
+	UnloadTexture(background);
+	ClearBackground(BLACK);
 }
 
 void profileWindow()		// --Same as teacher window--

@@ -51,11 +51,11 @@ bool userStudentOrTeacher(bool logOrReg)
 
 void mainWindowFunctions()
 {
-	bool menu = false, start = true;
+	
 	if (Button::GetInstance()->isClicked(button.menuButtons[0]))	// Buttons toggle menu items/close window
 	{
 
-
+		mainWindow();
 
 	}
 }
@@ -63,4 +63,16 @@ void mainWindowFunctions()
 void textureRenderer()
 {
 	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
+}
+
+void ManageWindow() // Sets basic window parameters
+{
+
+	system("cls");
+	system("color f0");
+
+	InitWindow(1920, 1080, "e-Class Edge");
+	ToggleFullscreen();
+	SetTargetFPS(60);
+	
 }

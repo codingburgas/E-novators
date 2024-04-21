@@ -1,5 +1,6 @@
 #pragma once
 
+void ManageWindow();
 void sceneMagager();
 void mainWindow();
 void profileWindow();
