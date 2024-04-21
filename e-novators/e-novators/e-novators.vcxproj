@@ -146,6 +146,7 @@
     <ClCompile Include="services\userDataManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="closer.h" />
     <ClInclude Include="services\buttons.h" />
     <ClInclude Include="services\def.h" />
     <ClInclude Include="services\displayFunctionsCMD.h" />

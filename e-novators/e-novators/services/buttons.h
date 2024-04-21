@@ -19,13 +19,16 @@ public:
 	// Check if the button is clicked
 	bool isClicked(Rectangle rect);
 
-	Rectangle menuButtons[2] = {
+	Rectangle menuButtons[5] = {
 		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
-		{screenWidth / 2 - menuButtonLength / 2, screenHeight / 1.5 - (screenHeight / 2) / 4, menuButtonLength, menuButtonHeight}
+		{screenWidth / 3 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
+		{screenWidth / 4 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
+		{screenWidth / 5 - menuButtonLength / 2, screenHeight / 2.4, menuButtonLength, menuButtonHeight},
+		{screenWidth - 100 - menuButtonLength / 2, screenHeight / 7 - (screenHeight / 2) / 4, menuButtonLength, menuButtonHeight}
 
 	};	// Sets button size and position
 
-	Rectangle backButton = { 50, 50 , menuButtonLength, menuButtonHeight }; // Draws the back button in the menu
+	Rectangle backButton = { 20, 50 , menuButtonLength, menuButtonHeight }; // Draws the back button in the menu
 
 private:
 	static Button* instance;
