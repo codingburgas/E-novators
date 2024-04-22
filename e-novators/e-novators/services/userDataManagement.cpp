@@ -49,15 +49,51 @@ bool userStudentOrTeacher(bool logOrReg)
 	return false;
 }
 
+// Loading/Rendering all textures
 void textureRenderer()
 {
-	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
+	// Base layer
 	background = LoadTexture("../../sprites/windows-design/mainWindowFHD.png");
+	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
+	backButton = LoadTexture("../../sprites/buttons/backButton.png");
+	classButton = LoadTexture("../../sprites/buttons/classButton.png");
+
+	// Top layer buttons
+	english = LoadTexture("../../sprites/buttons/english.png");
+	bulgarian = LoadTexture("../../sprites/buttons/bulgarian.png");
+	german = LoadTexture("../../sprites/buttons/german.png");
+	mathematics = LoadTexture("../../sprites/buttons/mathematics.png");
+
+	// Mid layer buttons
+	programming = LoadTexture("../../sprites/buttons/programming.png");
+	history = LoadTexture("../../sprites/buttons/history.png");
+	geography = LoadTexture("../../sprites/buttons/chemistry.png");
+	philosophy = LoadTexture("../../sprites/buttons/philosophy.png");
+
+	// Bottom layer buttons
+	digitalArts = LoadTexture("../../sprites/buttons/digitalArts.png");
+	biology = LoadTexture("../../sprites/buttons/Biology.png");
+	chemistry = LoadTexture("../../sprites/buttons/Chemistry.png");
 }
 
+// Unloading all textures
 void textureUnloader()
 {
 	UnloadTexture(background);
+	UnloadTexture(backButton);
+	UnloadTexture(exitButton);
+	UnloadTexture(classButton);
+	UnloadTexture(english);
+	UnloadTexture(bulgarian);
+	UnloadTexture(german);
+	UnloadTexture(mathematics);
+	UnloadTexture(programming);
+	UnloadTexture(history);
+	UnloadTexture(geography);
+	UnloadTexture(philosophy);
+	UnloadTexture(digitalArts);
+	UnloadTexture(biology);
+	UnloadTexture(chemistry);
 }
 
 // Considered as Entry Violation (EV) after 5 failed login attempts

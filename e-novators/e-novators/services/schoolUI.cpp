@@ -1,11 +1,30 @@
 #include "precompiler.h"
-#include "closer.h"
 // --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
 
 static Button button;
 extern Texture2D background;
 extern Texture2D exitButton;
+extern Texture2D backButton;
+extern Texture2D classButton;
+
+// Top layer buttons
+extern Texture2D english;
+extern Texture2D bulgarian;
+extern Texture2D german;
+extern Texture2D mathematics;
+
+// Mid layer buttons
+extern Texture2D programming;
+extern Texture2D history;
+extern Texture2D geography;
+extern Texture2D philosophy;
+
+// Bottom layer buttons
+extern Texture2D digitalArts;
+extern Texture2D biology;
+extern Texture2D chemistry;
 extern int windowsTransition;
+extern bool closeKey;
 
 void sceneMagager(int userPFP)
 {
@@ -14,7 +33,7 @@ void sceneMagager(int userPFP)
 
 	InitWindow(1920, 1080, "E-novators");
 	SetTargetFPS(60);
-	//ToggleFullscreen();
+	ToggleFullscreen();
 
 	textureRenderer();
 
@@ -24,6 +43,17 @@ void sceneMagager(int userPFP)
 		BeginDrawing();
 		ClearBackground(RAYWHITE);
 		DrawTexture(background, 0, 0, RAYWHITE);
+
+		DrawTexture(exitButton, GetScreenWidth() - 100, 10, RAYWHITE);
+		if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+		{
+			if (checkIfClicked(GetMouseX(), GetMouseY(), exitButton, GetScreenWidth() - 100, 10))
+			{
+				closeKey = true;
+			}
+		}
+
+		DrawTexture(classButton, GetScreenWidth() - 320, 33, RAYWHITE);
 
 		switch (windowsTransition)
 		{
@@ -50,40 +80,27 @@ void sceneMagager(int userPFP)
 
 void mainWindow()			// --Same as teacher window--	ID: 1
 {
-	Button::GetInstance()->drawButton(button.menuButtons[0]);// Draws menu button
-	DrawText("English", screenWidth / 2 - MeasureText("English", 30) / 2, 488, 30, menuTextColor); // Draws menu button
+	Button::GetInstance()->drawButton(button.menuButtons[0]);
+	DrawText("Go to 2nd window", screenWidth / 2 - MeasureText("Go to 2nd window", 30) / 2 - 15, 515, 30, menuTextColor);
 
-	Button::GetInstance()->drawButton(button.menuButtons[1]);// Draws menu button
-	DrawText("Mathematics", (screenWidth / 3) - MeasureText("Mathematics", 30) / 2, 488, 30, menuTextColor); // Draws menu button
-
-	Button::GetInstance()->drawButton(button.menuButtons[2]);// Draws menu button
-	DrawText("Mathematics", (screenWidth / 4) - MeasureText("Geography", 30) / 2, 488, 30, menuTextColor); // Draws menu button
-
-	Button::GetInstance()->drawButton(button.menuButtons[3]);// Draws menu button
-	DrawText("Mathematics", (screenWidth / 5) - MeasureText("Geography", 30) / 2, 488, 30, menuTextColor); // Draws menu button
-
-	DrawTexture(exitButton, GetScreenWidth() - 100, 10, RAYWHITE);
-
-	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
-	{
-		if (checkIfClicked(GetMouseX(), GetMouseY(), exitButton, GetScreenWidth() - 100, 10))
-		{
-			closeKey = true;
-		}
-	}
-
-
-	if (Button::GetInstance()->isClicked(button.menuButtons[0]))	// Buttons toggle menu items/close window
+	if (Button::GetInstance()->isClicked(button.menuButtons[0]))
 	{
 		windowsTransition = 2;
 	}
-
-
 }
 
 void schoolWindow()			// --Same as teacher window--	ID: 2
 {
+	DrawTexture(backButton, GetScreenWidth() - 500, 33, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 33))
+		{
+			windowsTransition = 1;
+		}
+	}
 
+	// Goshe brat slagai tuk butonite
 }
 
 void assignmentWindowStudent()							//	ID: 3
