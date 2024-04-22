@@ -1,4 +1,6 @@
-# <img src= "resources/logo_readme.png#gh-dark-mode-only" alt="E-Novators"><img src= "resources/logo_transparent_readme.png#gh-light-mode-only" alt="E-Novators">
+# 
+<p align = "center">
+<img src= "resources/logo_readme.png#gh-dark-mode-only" alt="E-Novators"><img src= "resources/logo_transparent_readme.png#gh-light-mode-only" alt="E-Novators">
   
 <hr>
 
