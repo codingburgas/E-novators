@@ -108,7 +108,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), bulgarian, GetScreenWidth() - 1090, 200))
 		{
-			
+			windowsTransition = 3;
 		}
 	}
 
@@ -119,7 +119,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), english, GetScreenWidth() - 1300, 200))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -130,7 +130,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), german, GetScreenWidth() - 1530, 200))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -141,7 +141,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), mathematics, GetScreenWidth() - 830, 200))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -154,7 +154,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), programming, GetScreenWidth() - 800, 500))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -165,7 +165,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), history, GetScreenWidth() - 1580, 500))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -176,7 +176,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), geography, GetScreenWidth() - 1360, 500))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -187,7 +187,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), philosophy, GetScreenWidth() - 1110, 500))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -200,7 +200,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), digitalArts, GetScreenWidth() - 820, 800))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -211,7 +211,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), biology, GetScreenWidth() - 1150, 800))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -222,7 +222,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), chemistry, GetScreenWidth() - 1550, 800))
 		{
-
+			windowsTransition = 3;
 		}
 	}
 
@@ -235,7 +235,7 @@ void assignmentWindowStudent()							//	ID: 3
 	{
 		if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 33))
 		{
-			windowsTransition = 1;
+			windowsTransition = 2;
 		}
 	}
 
