@@ -57,34 +57,48 @@ void textureRenderer()
 	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
 	backButton = LoadTexture("../../sprites/buttons/backButton.png");
 	classButton = LoadTexture("../../sprites/buttons/classButton.png");
-	profile_red = LoadTexture("../../sprites/user-profile-designs/profile_red.png");
 
 	// Top layer buttons
-	english = LoadTexture("../../sprites/TEMP-Buttons/english.png");
-	bulgarian = LoadTexture("../../sprites/TEMP-Buttons/bulgarian.png");
-	german = LoadTexture("../../sprites/TEMP-Buttons/german.png");
-	mathematics = LoadTexture("../../sprites/TEMP-Buttons/mathematics.png");
+	english = LoadTexture("../../sprites/buttons/english.png");
+	bulgarian = LoadTexture("../../sprites/buttons/bulgarian.png");
+	german = LoadTexture("../../sprites/buttons/german.png");
+	mathematics = LoadTexture("../../sprites/buttons/mathematics.png");
 
 	// Mid layer buttons
-	programming = LoadTexture("../../sprites/TEMP-Buttons/programming.png");
-	history = LoadTexture("../../sprites/TEMP-Buttons/history.png");
-	geography = LoadTexture("../../sprites/TEMP-Buttons/geography.png");
-	philosophy = LoadTexture("../../sprites/TEMP-Buttons/philosophy.png");
+	programming = LoadTexture("../../sprites/buttons/programming.png");
+	history = LoadTexture("../../sprites/buttons/history.png");
+	geography = LoadTexture("../../sprites/buttons/geography.png");
+	philosophy = LoadTexture("../../sprites/buttons/philosophy.png");
 
 	// Bottom layer buttons
-	digitalArts = LoadTexture("../../sprites/TEMP-Buttons/digitalArts.png");
-	biology = LoadTexture("../../sprites/TEMP-Buttons/Biology.png");
-	chemistry = LoadTexture("../../sprites/TEMP-Buttons/Chemistry.png");
+	digitalArts = LoadTexture("../../sprites/buttons/digitalArts.png");
+	biology = LoadTexture("../../sprites/buttons/biology.png");
+	chemistry = LoadTexture("../../sprites/buttons/chemistry.png");
+
+	// Profile pictures layer - students
+	studentsPFPRED = LoadTexture("../../sprites/user-profile-designs/profile-red.png");
+	studentsPFPBEIGE = LoadTexture("../../sprites/user-profile-designs/profile-beige.png");
+	studentsPFPCYAN = LoadTexture("../../sprites/user-profile-designs/profile-cyan.png");
+	studentsPFPGOLD = LoadTexture("../../sprites/user-profile-designs/profile-gold.png");
+	studentsPFPGREEN = LoadTexture("../../sprites/user-profile-designs/profile-green.png");
+	studentsPFPINDIGO = LoadTexture("../../sprites/user-profile-designs/profile-indigo.png");
+	studentsPFPORANGE = LoadTexture("../../sprites/user-profile-designs/profile-orange.png");
+
+	// Profile pictures layer - teachers
+	teachersPFPGRAY = LoadTexture("../../sprites/user-profile-designs/teachers/profile-1-t.png");
+	teachersPFPWHITE = LoadTexture("../../sprites/user-profile-designs/teachers/profile-2-t.png");
 }
 
 // Unloading all textures
 void textureUnloader()
 {
-	UnloadTexture(profile_red);
+	// Unloading base textures
 	UnloadTexture(background);
 	UnloadTexture(backButton);
 	UnloadTexture(exitButton);
 	UnloadTexture(classButton);
+
+	// Unloading class button textures
 	UnloadTexture(english);
 	UnloadTexture(bulgarian);
 	UnloadTexture(german);
@@ -96,6 +110,19 @@ void textureUnloader()
 	UnloadTexture(digitalArts);
 	UnloadTexture(biology);
 	UnloadTexture(chemistry);
+
+	// Unloading profile picture textures
+	UnloadTexture(studentsPFPRED);
+	UnloadTexture(studentsPFPBEIGE);
+	UnloadTexture(studentsPFPCYAN);
+	UnloadTexture(studentsPFPGOLD);
+	UnloadTexture(studentsPFPGREEN);
+	UnloadTexture(studentsPFPINDIGO);
+	UnloadTexture(studentsPFPORANGE);
+	UnloadTexture(teachersPFPGRAY);
+	UnloadTexture(teachersPFPWHITE);
+
+	delete[] buttons;
 }
 
 // Considered as Entry Violation (EV) after 5 failed login attempts

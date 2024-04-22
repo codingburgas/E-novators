@@ -1,12 +1,15 @@
 #include "precompiler.h"
 // --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
 
+// Base layer
 static Button button;
-extern Texture2D profile_red;
 extern Texture2D background;
 extern Texture2D exitButton;
 extern Texture2D backButton;
 extern Texture2D classButton;
+
+extern int windowsTransition;
+extern bool closeKey;
 
 // Top layer buttons
 extern Texture2D english;
@@ -24,8 +27,9 @@ extern Texture2D philosophy;
 extern Texture2D digitalArts;
 extern Texture2D biology;
 extern Texture2D chemistry;
-extern int windowsTransition;
-extern bool closeKey;
+
+// Profile pictures array
+extern Texture2D buttons[];
 
 void sceneMagager(int userPFP)
 {
@@ -34,7 +38,7 @@ void sceneMagager(int userPFP)
 
 	InitWindow(1920, 1080, "E-novators");
 	SetTargetFPS(60);
-	ToggleFullscreen();
+	//ToggleFullscreen();
 
 	textureRenderer();
 
@@ -85,7 +89,7 @@ void mainWindow()			// --Same as teacher window--	ID: 1
 	DrawText("Go to 2nd \n\n window", screenWidth / 2 - MeasureText("Go to 2nd window", 30) / 2 + 60, 515, 30, menuTextColor);
 
 	DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
-	DrawTexture(profile_red, 30, 30, WHITE);
+	DrawTexture(buttons[0], 30, 30, RAYWHITE);
 
 	if (Button::GetInstance()->isClicked(button.menuButtons[0]))
 	{
@@ -95,8 +99,8 @@ void mainWindow()			// --Same as teacher window--	ID: 1
 
 void schoolWindow()			// --Same as teacher window--	ID: 2
 {
-	DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
-	DrawTexture(profile_red, 30, 30, WHITE);
+	/*DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
+	DrawTexture(profile_red, 30, 30, WHITE);*/
 
 	DrawTexture(backButton, GetScreenWidth() - 500, 33, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -114,8 +118,6 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 	DrawTexture(bulgarian, GetScreenWidth() - 1090, 200, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
 	{
-		DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
-		DrawTexture(profile_red, 30, 30, WHITE);
 		if (checkIfClicked(GetMouseX(), GetMouseY(), bulgarian, GetScreenWidth() - 1090, 200))
 		{
 			windowsTransition = 3;
@@ -240,8 +242,8 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 
 void assignmentWindowStudent()							//	ID: 3
 {
-	DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
-	DrawTexture(profile_red, 30, 30, WHITE);
+	/*DrawText("Georgi Ivanov", 145, 50, 40, BLACK);
+	DrawTexture(profile_red, 30, 30, WHITE);*/
 
 	DrawTexture(backButton, GetScreenWidth() - 500, 33, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -251,8 +253,6 @@ void assignmentWindowStudent()							//	ID: 3
 			windowsTransition = 2;
 		}
 	}
-
-	
 }
 
 
