@@ -81,7 +81,7 @@ void sceneMagager(int userPFP)
 void mainWindow()			// --Same as teacher window--	ID: 1
 {
 	Button::GetInstance()->drawButton(button.menuButtons[0]);
-	DrawText("Go to 2nd window", screenWidth / 2 - MeasureText("Go to 2nd window", 30) / 2 - 15, 515, 30, menuTextColor);
+	DrawText("Go to 2nd \n\n window", screenWidth / 2 - MeasureText("Go to 2nd window", 30) / 2 + 60, 515, 30, menuTextColor);
 
 	if (Button::GetInstance()->isClicked(button.menuButtons[0]))
 	{
@@ -100,13 +100,147 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		}
 	}
 
-	// Goshe brat slagai tuk butonite
+	// Top layer buttons
+
+	// Bulgarian button
+	DrawTexture(bulgarian, GetScreenWidth() - 1090, 200, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), bulgarian, GetScreenWidth() - 1090, 200))
+		{
+			
+		}
+	}
+
+	// English button
+
+	DrawTexture(english, GetScreenWidth() - 1300, 200, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), english, GetScreenWidth() - 1300, 200))
+		{
+
+		}
+	}
+
+	// German button
+
+	DrawTexture(german, GetScreenWidth() - 1530, 200, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), german, GetScreenWidth() - 1530, 200))
+		{
+
+		}
+	}
+
+	// Mathematics button
+
+	DrawTexture(mathematics, GetScreenWidth() - 830, 200, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), mathematics, GetScreenWidth() - 830, 200))
+		{
+
+		}
+	}
+
+	// Middle layer buttons
+	
+	// Programing button
+
+	DrawTexture(programming, GetScreenWidth() - 800, 500, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), programming, GetScreenWidth() - 800, 500))
+		{
+
+		}
+	}
+
+	// History button
+
+	DrawTexture(history, GetScreenWidth() - 1580, 500, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), history, GetScreenWidth() - 1580, 500))
+		{
+
+		}
+	}
+
+	// Geography button
+
+	DrawTexture(geography, GetScreenWidth() - 1360, 500, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), geography, GetScreenWidth() - 1360, 500))
+		{
+
+		}
+	}
+
+	// Philosophy button
+
+	DrawTexture(philosophy, GetScreenWidth() - 1080, 500, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), philosophy, GetScreenWidth() - 1110, 500))
+		{
+
+		}
+	}
+
+	// Bottom layer buttons
+
+	//
+
+	DrawTexture(digitalArts, GetScreenWidth() - 820, 800, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), digitalArts, GetScreenWidth() - 820, 800))
+		{
+
+		}
+	}
+
+	DrawTexture(biology, GetScreenWidth() - 1150, 800, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), biology, GetScreenWidth() - 1150, 800))
+		{
+
+		}
+	}
+
+	DrawTexture(chemistry, GetScreenWidth() - 1550, 800, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), chemistry, GetScreenWidth() - 1550, 800))
+		{
+
+		}
+	}
+
 }
 
 void assignmentWindowStudent()							//	ID: 3
 {
+	DrawTexture(backButton, GetScreenWidth() - 500, 33, RAYWHITE);
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+	{
+		if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 33))
+		{
+			windowsTransition = 1;
+		}
+	}
 
+	
 }
+
+
+
+
 
 // --ALL WINDOWS LISTED BELOW ARE *TEACHER RELATED*--
 

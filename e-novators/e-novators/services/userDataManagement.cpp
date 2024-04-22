@@ -59,21 +59,21 @@ void textureRenderer()
 	classButton = LoadTexture("../../sprites/buttons/classButton.png");
 
 	// Top layer buttons
-	english = LoadTexture("../../sprites/buttons/english.png");
-	bulgarian = LoadTexture("../../sprites/buttons/bulgarian.png");
-	german = LoadTexture("../../sprites/buttons/german.png");
-	mathematics = LoadTexture("../../sprites/buttons/mathematics.png");
+	english = LoadTexture("../../sprites/TEMP-Buttons/english.png");
+	bulgarian = LoadTexture("../../sprites/TEMP-Buttons/bulgarian.png");
+	german = LoadTexture("../../sprites/TEMP-Buttons/german.png");
+	mathematics = LoadTexture("../../sprites/TEMP-Buttons/mathematics.png");
 
 	// Mid layer buttons
-	programming = LoadTexture("../../sprites/buttons/programming.png");
-	history = LoadTexture("../../sprites/buttons/history.png");
-	geography = LoadTexture("../../sprites/buttons/chemistry.png");
-	philosophy = LoadTexture("../../sprites/buttons/philosophy.png");
+	programming = LoadTexture("../../sprites/TEMP-Buttons/programming.png");
+	history = LoadTexture("../../sprites/TEMP-Buttons/history.png");
+	geography = LoadTexture("../../sprites/TEMP-Buttons/geography.png");
+	philosophy = LoadTexture("../../sprites/TEMP-Buttons/philosophy.png");
 
 	// Bottom layer buttons
-	digitalArts = LoadTexture("../../sprites/buttons/digitalArts.png");
-	biology = LoadTexture("../../sprites/buttons/Biology.png");
-	chemistry = LoadTexture("../../sprites/buttons/Chemistry.png");
+	digitalArts = LoadTexture("../../sprites/TEMP-Buttons/digitalArts.png");
+	biology = LoadTexture("../../sprites/TEMP-Buttons/Biology.png");
+	chemistry = LoadTexture("../../sprites/TEMP-Buttons/Chemistry.png");
 }
 
 // Unloading all textures
