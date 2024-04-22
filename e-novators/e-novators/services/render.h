@@ -2,7 +2,7 @@
 
 int windowsTransition = 1;
 bool closeKey = false;
-
+Texture2D profile_red;
 Texture2D background;
 Texture2D exitButton;
 Texture2D backButton;

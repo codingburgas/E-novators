@@ -57,6 +57,7 @@ void textureRenderer()
 	exitButton = LoadTexture("../../sprites/buttons/exitButton.png");
 	backButton = LoadTexture("../../sprites/buttons/backButton.png");
 	classButton = LoadTexture("../../sprites/buttons/classButton.png");
+	profile_red = LoadTexture("../../sprites/user-profile-designs/profile_red.png");
 
 	// Top layer buttons
 	english = LoadTexture("../../sprites/TEMP-Buttons/english.png");
@@ -79,6 +80,7 @@ void textureRenderer()
 // Unloading all textures
 void textureUnloader()
 {
+	UnloadTexture(profile_red);
 	UnloadTexture(background);
 	UnloadTexture(backButton);
 	UnloadTexture(exitButton);
