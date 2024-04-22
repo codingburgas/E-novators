@@ -193,7 +193,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 
 	// Bottom layer buttons
 
-	//
+	// Digital Arts button
 
 	DrawTexture(digitalArts, GetScreenWidth() - 820, 800, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
@@ -204,6 +204,8 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		}
 	}
 
+	// Biology button
+
 	DrawTexture(biology, GetScreenWidth() - 1150, 800, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
 	{
@@ -212,6 +214,8 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 
 		}
 	}
+
+	// Chemistry button
 
 	DrawTexture(chemistry, GetScreenWidth() - 1550, 800, RAYWHITE);
 	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
