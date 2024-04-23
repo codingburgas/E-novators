@@ -161,6 +161,7 @@
     <Text Include="database\materials\admin-ban-list.txt" />
     <Text Include="database\materials\book-library.txt" />
     <Text Include="database\materials\teacher-assignments.txt" />
+    <Text Include="database\users-students-statistics.txt" />
     <Text Include="database\users-students.txt" />
     <Text Include="database\users-teachers.txt" />
     <Text Include="database\usersPFP-students.txt" />

@@ -64,6 +64,8 @@ void userType(bool userType)
 
 void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, std::string& password, bool entryType)
 {
+	std::string keepStudentName = "", keepStudentClass = "";
+
 	if (entryType)
 	{
 		// Login form - students
@@ -73,6 +75,8 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 		char classLetter;
 		bool accountFound = false, flag = false;
 		int numberOfAttemps = 0, classNumber = 0;
+
+		std::string rootStudentsDBPFP = "";
 
 		while (!accountFound)
 		{
@@ -99,13 +103,16 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 			studentsDBREAD.seekg(0, std::ios::beg);
 			studentsDBPFP.clear();
 			studentsDBPFP.seekg(0, std::ios::beg);
-			std::string rootStudentsDB = "", rootStudentsDBPFP = "";
+			std::string rootStudentsDB = "";
 			while (studentsDBREAD)
 			{
 				getline(studentsDBREAD, rootStudentsDB);
 				getline(studentsDBPFP, rootStudentsDBPFP);
 				if (rootStudentsDB == (username + " " + password + " " + std::to_string(classNumber) + " " + classLetter + " " + rootStudentsDBPFP))
 				{
+					keepStudentName = username;
+					keepStudentClass = std::to_string(classNumber) + " " + classLetter;
+
 					flag = true;
 					break;
 				}
@@ -140,7 +147,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 		if (flag)
 		{
 			// Enter school
-			sceneMagager(0);
+			sceneMagager(keepStudentName, keepStudentClass, stoi(rootStudentsDBPFP), true);
 		}
 	}
 	else
@@ -150,6 +157,7 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 		// Loading database
 		std::ofstream studentsDBWRITE("./database/users-students.txt", std::ios::app);		// Open database in append mode
 		std::ofstream studentsDBPFP("database/usersPFP-students.txt", std::ios::app);		// Open database in append mode
+		std::ofstream studentsDBSTATS("database/users-statistics.txt", std::ios::app);		// Open database in append mode
 
 		int keepUserPFP = 0;
 		bool flag = true;
@@ -314,6 +322,10 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				// Write new data in database
 				studentsDBWRITE << username << " " << password << " " << *studentClassNumber << " " << studentClassLetter << " " << keepUserPFP << '\n';
 				studentsDBPFP << keepUserPFP << '\n';
+				studentsDBSTATS << generateUserStatistics() << '\n';
+
+				keepStudentName = username;
+				keepStudentClass = *studentClassNumber + " " + studentClassLetter;
 
 				if (flag)
 				{
@@ -327,10 +339,11 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 
 			studentsDBWRITE.close();
 			studentsDBPFP.close();
+			studentsDBSTATS.close();
 			if (flag)
 			{
 				// Enter school after completing registration
-				sceneMagager(keepUserPFP);
+				sceneMagager(keepStudentName, keepStudentClass, keepUserPFP, true);
 			}
 		}
 	}
@@ -338,6 +351,8 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 
 void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, std::string& password, bool entryType)
 {
+	std::string keepTeacherName = "";
+
 	if (entryType)
 	{
 		// Login form - teachers
@@ -347,6 +362,8 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 		char classLetter;
 		bool accountFound = false, flag = false;
 		int numberOfAttemps = 0, classNumber = 0;
+
+		std::string rootTeachersDBPFP = "";
 
 		while (!accountFound)
 		{
@@ -365,13 +382,15 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 			// Clear the buffer and place the reading point at the beginning
 			teachersDBREAD.clear();
 			teachersDBREAD.seekg(0, std::ios::beg);
-			std::string rootTeachersDB = "", rootTeachersDBPFP = "";
+			std::string rootTeachersDB = "";
 			while (teachersDBREAD)
 			{
 				getline(teachersDBREAD, rootTeachersDB);
 				getline(teachersDBREAD, rootTeachersDBPFP);
 				if (rootTeachersDB == (username + " " + password + " " + rootTeachersDBPFP))
 				{
+					keepTeacherName = username;
+
 					flag = true;
 					break;
 				}
@@ -406,7 +425,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 		if (flag)
 		{
 			// Enter school after successful login
-			sceneMagager(0);
+			sceneMagager(keepTeacherName, "<empty>", stoi(rootTeachersDBPFP), false);
 		}
 	}
 	else
@@ -552,6 +571,8 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 				teachersDBWRITE << username << " " << password << " " << keepUserPFP << '\n';
 				teachersDBPFP << keepUserPFP << '\n';
 
+				keepTeacherName = username;
+
 				if (flag)
 				{
 					system("cls");
@@ -569,7 +590,7 @@ void displayTeacherRegLog(std::ifstream& teachersDBREAD, std::string& username, 
 			if (flag)
 			{
 				// Enter school after completing registration
-				sceneMagager(keepUserPFP);
+				sceneMagager(keepTeacherName, "<empty>", keepUserPFP, false);
 			}
 		}
 	}

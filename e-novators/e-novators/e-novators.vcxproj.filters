@@ -91,5 +91,8 @@
     <Text Include="database\usersPFP-teachers.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="database\users-students-statistics.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

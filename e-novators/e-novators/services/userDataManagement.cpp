@@ -3,6 +3,7 @@
 
 static Button button;
 
+// Wait for user input
 void waitForKey()
 {
 	// Check if the "Enter" key is pressed
@@ -13,6 +14,7 @@ void waitForKey()
 	}
 }
 
+// Check if user wants to login/register
 bool accountLogOrReg()
 {
 	displayEntryPage();
@@ -31,6 +33,7 @@ bool accountLogOrReg()
 	return false;
 }
 
+// Check if user is a teacher/student
 bool userStudentOrTeacher(bool logOrReg)
 {
 	userType(logOrReg);
@@ -76,17 +79,17 @@ void textureRenderer()
 	chemistry = LoadTexture("../../sprites/buttons/chemistry.png");
 
 	// Profile pictures layer - students
-	studentsPFPRED = LoadTexture("../../sprites/user-profile-designs/profile-red.png");
-	studentsPFPBEIGE = LoadTexture("../../sprites/user-profile-designs/profile-beige.png");
-	studentsPFPCYAN = LoadTexture("../../sprites/user-profile-designs/profile-cyan.png");
-	studentsPFPGOLD = LoadTexture("../../sprites/user-profile-designs/profile-gold.png");
-	studentsPFPGREEN = LoadTexture("../../sprites/user-profile-designs/profile-green.png");
-	studentsPFPINDIGO = LoadTexture("../../sprites/user-profile-designs/profile-indigo.png");
-	studentsPFPORANGE = LoadTexture("../../sprites/user-profile-designs/profile-orange.png");
+	profilePictures[0] = LoadTexture("../../sprites/user-profile-designs/profile-beige.png");
+	profilePictures[1] = LoadTexture("../../sprites/user-profile-designs/profile-cyan.png");
+	profilePictures[2] = LoadTexture("../../sprites/user-profile-designs/profile-gold.png");
+	profilePictures[3] = LoadTexture("../../sprites/user-profile-designs/profile-green.png");
+	profilePictures[4] = LoadTexture("../../sprites/user-profile-designs/profile-indigo.png");
+	profilePictures[5] = LoadTexture("../../sprites/user-profile-designs/profile-orange.png");
+	profilePictures[6] = LoadTexture("../../sprites/user-profile-designs/profile-red.png");
 
 	// Profile pictures layer - teachers
-	teachersPFPGRAY = LoadTexture("../../sprites/user-profile-designs/teachers/profile-1-t.png");
-	teachersPFPWHITE = LoadTexture("../../sprites/user-profile-designs/teachers/profile-2-t.png");
+	profilePictures[7] = LoadTexture("../../sprites/user-profile-designs/teachers/profile-1-t.png");
+	profilePictures[8] = LoadTexture("../../sprites/user-profile-designs/teachers/profile-2-t.png");
 }
 
 // Unloading all textures
@@ -122,7 +125,7 @@ void textureUnloader()
 	UnloadTexture(teachersPFPGRAY);
 	UnloadTexture(teachersPFPWHITE);
 
-	delete[] buttons;
+	delete[] profilePictures;
 }
 
 // Considered as Entry Violation (EV) after 5 failed login attempts
@@ -149,20 +152,27 @@ int generateUserPFP(bool studentPFP)
 	}
 }
 
-int generateUserStatistics()
+// Generate student statistics
+std::string generateUserStatistics()
 {
-	/*std::random_device avgStudentGrade;
-	std::uniform_int_distribution<float> rangeGrade(2, 6);
+	std::string userStatistics = "";
+
+	std::random_device avgStudentGrade;
+	std::uniform_real_distribution<float> rangeGrade(2, 6);
+	userStatistics += std::to_string(rangeGrade(avgStudentGrade)) + " ";
 
 	std::random_device classMembers;
 	std::uniform_int_distribution<int> rangeClass(1, 24);
+	userStatistics += std::to_string(rangeClass(classMembers)) + " ";
 
 	std::random_device graduation;
-	std::uniform_int_distribution<int> rangeGraduation(1, 503);*/
+	std::uniform_int_distribution<int> rangeGraduation(1, 503);
+	userStatistics += std::to_string(rangeGraduation(graduation));
 
-	return 1;
+	return userStatistics;
 }
 
+// Check if a button is clicked
 bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
 {
 	if ((x >= imageX && x <= imageX + image.width) && (y >= imageY && y <= imageY + image.height))

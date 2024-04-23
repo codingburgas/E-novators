@@ -27,21 +27,21 @@ Texture2D biology;
 Texture2D chemistry;
 
 // Profile pictures layer - students
-Texture2D studentsPFPRED;
 Texture2D studentsPFPBEIGE;
 Texture2D studentsPFPCYAN;
 Texture2D studentsPFPGOLD;
 Texture2D studentsPFPGREEN;
 Texture2D studentsPFPINDIGO;
 Texture2D studentsPFPORANGE;
+Texture2D studentsPFPRED;
 
 // Profile pictures layer - teachers
 Texture2D teachersPFPGRAY;
 Texture2D teachersPFPWHITE;
 
 // Profile pictures main array
-Texture2D buttons[] = {
-	studentsPFPRED, studentsPFPBEIGE, studentsPFPCYAN,
-	studentsPFPGOLD, studentsPFPGREEN, studentsPFPINDIGO,
-	studentsPFPORANGE, teachersPFPGRAY, teachersPFPWHITE
+Texture2D profilePictures[] = {
+	studentsPFPBEIGE, studentsPFPCYAN, studentsPFPGOLD, 
+	studentsPFPGREEN, studentsPFPINDIGO,studentsPFPORANGE, 
+	studentsPFPRED, teachersPFPGRAY, teachersPFPWHITE, 
 };
