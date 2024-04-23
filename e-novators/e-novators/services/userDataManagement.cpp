@@ -17,6 +17,7 @@ void waitForKey()
 // Check if user wants to login/register
 bool accountLogOrReg()
 {
+	// Let's the user choose between login and register
 	displayEntryPage();
 
 	int userInput = 0;
@@ -36,6 +37,7 @@ bool accountLogOrReg()
 // Check if user is a teacher/student
 bool userStudentOrTeacher(bool logOrReg)
 {
+	// Determines whether the user is a student or a teacher
 	userType(logOrReg);
 
 	int userInput = 0;
@@ -175,6 +177,7 @@ std::string generateUserStatistics()
 // Check if a button is clicked
 bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
 {
+	// Defines whether a given point is within an area
 	if ((x >= imageX && x <= imageX + image.width) && (y >= imageY && y <= imageY + image.height))
 	{
 		return true;

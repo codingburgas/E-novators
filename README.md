@@ -39,8 +39,8 @@
 
 ## <img src= "resources/word_logo.png" alt="document icon"> Documentation
 
-#### <img src= "resources/word_logo.png" alt="word logo"> [Documentation](posle)
-#### <img src= "resources/powerpoint_logo.png" alt="powerpoint logo"> [Presentation](posle)
+#### <img src= "resources/word_logo.png" alt="word logo"> [Documentation](https://codingburgas-my.sharepoint.com/:w:/r/personal/ndzhelev22_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B16BD828B-DBE5-4F7E-AF9D-FBF4369E6E7D%7D&file=e-novators_documentation.docx&action=default&mobileredirect=true)
+#### <img src= "resources/powerpoint_logo.png" alt="powerpoint logo"> [Presentation](https://codingburgas-my.sharepoint.com/:p:/r/personal/ndzhelev22_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B8730ADF0-6A49-4724-9036-459FFED62838%7D&file=e-novators_presentation.pptx&action=edit&mobileredirect=true)
 
 ## <img src= "resources/laptop_icon.png" alt="laptop icon"> Used Technologies
 
