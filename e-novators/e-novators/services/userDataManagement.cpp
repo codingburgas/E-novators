@@ -187,3 +187,8 @@ bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
 		return false;
 	}
 }
+
+bool checkForAssignment()
+{
+	return false;
+}

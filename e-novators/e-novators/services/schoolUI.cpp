@@ -32,7 +32,7 @@ extern Texture2D chemistry;
 extern Texture2D profilePictures[];
 
 int userIDGLOBAL = 0;
-bool chosenSubject[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+bool chosenSubject = 0;
 bool userTypeEntry;
 
 void sceneMagager(std::string userName, std::string userClass, int userPFP, bool userTypePass)
@@ -121,7 +121,7 @@ void mainWindow()			// --Same as teacher window--	ID: 1
 {
 	if (userIDGLOBAL)
 	{
-		DrawText("INFO HERE", 800, 600, 40, BLACK);
+		DrawText("STATS HERE", 800, 600, 40, BLACK);
 	}
 }
 
@@ -160,7 +160,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), bulgarian, GetScreenWidth() - 1090, 179))
 		{
 			windowsTransition = 3;
-			chosenSubject[0] = true;
+			chosenSubject = 1;
 		}
 	}
 
@@ -172,7 +172,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), english, GetScreenWidth() - 1300, 179))
 		{
 			windowsTransition = 3;
-			chosenSubject[1] = true;
+			chosenSubject = 2;
 		}
 	}
 
@@ -184,7 +184,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), german, GetScreenWidth() - 1530, 179))
 		{
 			windowsTransition = 3;
-			chosenSubject[2] = true;
+			chosenSubject = 3;
 		}
 	}
 
@@ -196,7 +196,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), mathematics, GetScreenWidth() - 830, 179))
 		{
 			windowsTransition = 3;
-			chosenSubject[3] = true;
+			chosenSubject = 4;
 		}
 	}
 
@@ -210,7 +210,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), programming, GetScreenWidth() - 800, 479))
 		{
 			windowsTransition = 3;
-			chosenSubject[4] = true;
+			chosenSubject = 5;
 		}
 	}
 
@@ -222,7 +222,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), history, GetScreenWidth() - 1580, 479))
 		{
 			windowsTransition = 3;
-			chosenSubject[5] = true;
+			chosenSubject = 6;
 		}
 	}
 
@@ -234,7 +234,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), geography, GetScreenWidth() - 1360, 479))
 		{
 			windowsTransition = 3;
-			chosenSubject[6] = true;
+			chosenSubject = 7;
 		}
 	}
 
@@ -246,7 +246,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), philosophy, GetScreenWidth() - 1110, 479))
 		{
 			windowsTransition = 3;
-			chosenSubject[7] = true;
+			chosenSubject = 8;
 		}
 	}
 
@@ -260,7 +260,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), digitalArts, GetScreenWidth() - 820, 779))
 		{
 			windowsTransition = 3;
-			chosenSubject[8] = true;
+			chosenSubject = 9;
 		}
 	}
 
@@ -272,7 +272,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), biology, GetScreenWidth() - 1150, 779))
 		{
 			windowsTransition = 3;
-			chosenSubject[9] = true;
+			chosenSubject = 10;
 		}
 	}
 
@@ -284,7 +284,7 @@ void schoolWindow()			// --Same as teacher window--	ID: 2
 		if (checkIfClicked(GetMouseX(), GetMouseY(), chemistry, GetScreenWidth() - 1550, 779))
 		{
 			windowsTransition = 3;
-			chosenSubject[10] = true;
+			chosenSubject = 11;
 		}
 	}
 }
@@ -310,31 +310,179 @@ void assignmentWindowStudent()							//	ID: 3
 
 			if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
 			{
-				windowsTransition = 1;
+				windowsTransition = 2;
 			}
 		}
 	}
 
 	// Check which subject is chosen
-	for (int i = 0; i < 11; i++)
+	switch (chosenSubject)
 	{
-		if (chosenSubject[i] == true)
+	case 1:
+		if (!checkForAssignment())
 		{
-			switch (i)
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
 			{
-			case 1:; break;
-			case 2:; break;
-			case 3:; break;
-			case 4:; break;
-			case 5:; break;
-			case 6:; break;
-			case 7:; break;
-			case 8:; break;
-			case 9:; break;
-			case 10:; break;
-			case 11:; break;
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
 			}
 		}
+
+		; break;
+	case 2:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 3:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 4:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 5:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 6:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 7:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 8:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 9:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 10:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 11:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
 	}
 }
 
@@ -367,25 +515,174 @@ void assignmentWindowTeacher()							//	ID: 4
 	}
 
 	// Check which subject is chosen
-	for (int i = 0; i < 11; i++)
+	// Check which subject is chosen
+	switch (chosenSubject)
 	{
-		if (chosenSubject[i] == true)
+	case 1:
+		if (!checkForAssignment())
 		{
-			switch (i)
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
 			{
-			case 1:; break;
-			case 2:; break;
-			case 3:; break;
-			case 4:; break;
-			case 5:; break;
-			case 6:; break;
-			case 7:; break;
-			case 8:; break;
-			case 9:; break;
-			case 10:; break;
-			case 11:; break;
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
 			}
 		}
+
+		; break;
+	case 2:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 3:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 4:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 5:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 6:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 7:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 8:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 9:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 10:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
+	case 11:
+		if (!checkForAssignment())
+		{
+			DrawText("No assignments available at the moment...", MeasureText("No assignments available at the moment...", 45) - (MeasureText("No assignments available at the moment...", 45) / 2), GetScreenHeight() / 2, 45, BLACK);
+			if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+			{
+				if (checkIfClicked(GetMouseX(), GetMouseY(), backButton, GetScreenWidth() - 500, 12))
+				{
+					windowsTransition = 2;
+					chosenSubject = 0;
+				}
+			}
+		}
+
+		; break;
 	}
 }
 
