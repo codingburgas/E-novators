@@ -8,8 +8,8 @@ int main()
 	system("color 0f");
 	system("MODE CON COLS=186 LINES=50");	// Setting CMD's resolution(cols, lines) to 186x50 without resize lock - PUBLIC/ORGANISATION PCs ONLY
 
-	std::ifstream teacherDBREAD("database/users-teachers.txt");
-	std::ifstream studentsDBREAD("database/users-students.txt");
+	std::ifstream teacherDBREAD("database/users-teachers.txt");  // Database for teacher's login
+	std::ifstream studentsDBREAD("database/users-students.txt");  // Database for student's  login
 	std::string* username = new std::string(), * password = new std::string();
 
 	if (!(teacherDBREAD.is_open() && studentsDBREAD.is_open()))

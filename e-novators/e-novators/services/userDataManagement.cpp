@@ -15,6 +15,7 @@ void waitForKey()
 
 bool accountLogOrReg()
 {
+	// Let's the user choose between login and register
 	displayEntryPage();
 
 	int userInput = 0;
@@ -33,6 +34,7 @@ bool accountLogOrReg()
 
 bool userStudentOrTeacher(bool logOrReg)
 {
+	// Determines whether the user is a student or a teacher
 	userType(logOrReg);
 
 	int userInput = 0;
@@ -165,6 +167,7 @@ int generateUserStatistics()
 
 bool checkIfClicked(int x, int y, Texture2D image, int imageX, int imageY)
 {
+	// Defines whether a given point is within an area
 	if ((x >= imageX && x <= imageX + image.width) && (y >= imageY && y <= imageY + image.height))
 	{
 		return true;
