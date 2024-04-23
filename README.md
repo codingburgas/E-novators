@@ -45,7 +45,7 @@
 ## <img src= "resources/laptop_icon.png" alt="laptop icon"> Used Technologies
 
 #### Used code editor & collaborative service:
-##### <img src= "resources/visual_studio_logo.png" alt="Visual Studio 2022 logo"> <img src= "resources/github_logo_light.png#gh-light-mode-only" alt="github logo"><img src= "resources/github_logo_dark.png#gh-dark-mode-only" alt="github logo"> <img src= "resources/git_logo.png" alt="Git logo">
+##### <img src= "resources/visual_studio_logo.png" alt="Visual Studio 2022 logo"> <img src= "resources/github_logo_dark.png#gh-light-mode-only" alt="github logo"><img src= "resources/github_logo_dark.png#gh-dark-mode-only" alt="github logo"> <img src= "resources/git_logo.png" alt="Git logo">
 #### Used tools for our overall design:
 ##### <img src= "resources/krita_icon.png" alt="Krita logo"> <img src= "resources/photoshop_icon.png" alt="Photoshop logo"> <img src= "resources/illustrator_icon.png" alt="Illustrator logo"> <img src= "resources/figma_icon.png" alt="Figma logo">
 #### Used technologies for our project development:
