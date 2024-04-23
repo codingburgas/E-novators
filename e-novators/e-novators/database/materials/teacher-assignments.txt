@@ -1,0 +1,11 @@
+1 English Write an essay on topic: "What might be the most effective strategy to prepare young people for work?"
+2 Deutsch Erstellen Sie einen Tagesplan für die ganze Woche.
+3 Mathematics Solve the problem: 16x + 10 – 32 = 35 – 10x - 5
+4 History Who was assigned the Bulgarian militia during the Russo-Turkish war of 1877-1878?
+5 Programming John wonders if a given string contains а special char. Create a function check that returns true if a string contains a given char.
+6 Chemistry What is diffusion?
+7 Geography With which neighboring country does the Southwest region of Bulgaria NOT border?
+8 Bulgarian Write an essay on the topic: "The perfect shape is a circle"
+9 Digital Art Draw a cosmonaut 
+10 Biology Do a project on the evolution of an animal of your choice
+11 Philosophy What are the preliminary forms of reason according to Kant?

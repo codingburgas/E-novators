@@ -25,7 +25,7 @@
     <Filter Include="Header Files\schoolRelated">
       <UniqueIdentifier>{fc039dd0-812d-4542-a724-733295ec51ff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\cmdRelated\schoolRelated">
+    <Filter Include="Source Files\schoolRelated">
       <UniqueIdentifier>{2b080286-e094-4846-ab1b-12383db0ab73}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -40,7 +40,7 @@
       <Filter>Source Files\cmdRelated</Filter>
     </ClCompile>
     <ClCompile Include="services\schoolUI.cpp">
-      <Filter>Source Files\cmdRelated\schoolRelated</Filter>
+      <Filter>Source Files\schoolRelated</Filter>
     </ClCompile>
     <ClCompile Include="services\buttons.cpp">
       <Filter>Source Files</Filter>

@@ -1,5 +1,6 @@
 #include "precompiler.h"
-// --ALL WINDOWS LISTED BELOW ARE *STUDENT RELATED*--
+
+extern std::string studentStatsGLOBAL;
 
 // Base layer
 static Button button;
@@ -31,7 +32,6 @@ extern Texture2D chemistry;
 // Profile pictures array
 extern Texture2D profilePictures[];
 
-int userIDGLOBAL = 0;
 bool chosenSubject = 0;
 bool userTypeEntry;
 
@@ -119,10 +119,9 @@ void sceneMagager(std::string userName, std::string userClass, int userPFP, bool
 
 void mainWindow()			// --Same as teacher window--	ID: 1
 {
-	if (userIDGLOBAL)
-	{
-		DrawText("STATS HERE", 800, 600, 40, BLACK);
-	}
+	const char* printStats = studentStatsGLOBAL.c_str();
+	DrawText("Average grade/Place in class/Place in school: ", 250, 600, 40, BLACK);
+	DrawText(printStats, 250, 600, 40, BLACK);
 }
 
 void schoolWindow()			// --Same as teacher window--	ID: 2

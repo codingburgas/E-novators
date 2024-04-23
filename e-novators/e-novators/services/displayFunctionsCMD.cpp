@@ -1,5 +1,7 @@
 #include "precompiler.h"
 
+extern std::string studentStatsGLOBAL;
+
 // Draw function for top design
 void drawTopDesign()
 {
@@ -322,7 +324,9 @@ void displayStudentRegLog(std::ifstream& studentsDBREAD, std::string& username, 
 				// Write new data in database
 				studentsDBWRITE << username << " " << password << " " << *studentClassNumber << " " << studentClassLetter << " " << keepUserPFP << '\n';
 				studentsDBPFP << keepUserPFP << '\n';
-				studentsDBSTATS << generateUserStatistics() << '\n';
+
+				studentStatsGLOBAL = generateUserStatistics();
+				studentsDBSTATS << studentStatsGLOBAL << '\n';
 
 				keepStudentName = username;
 				keepStudentClass = *studentClassNumber + " " + studentClassLetter;
